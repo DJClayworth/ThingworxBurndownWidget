@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b66" majorVersion="7" minorVersion="2" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="2" schemaVersion="920"><StyleDefinitions/><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isResponsive="false" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-10-04T18:27:30.856Z" name="BurndownMashup" projectName="" rows="0.0" tags="PTC:Burndown"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ParameterDefinitions/><Things><Thing>BurndownThing</Thing></Things><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
+  "RunTimePermissions" : { },
+  "UI" : {
+    "Widgets" : [ {
+      "Widgets" : [ ],
+      "Properties" : {
+        "Left" : 55,
+        "ShowDataLoading" : true,
+        "ResponsiveLayout" : false,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Burndown",
+        "Area" : "UI",
+        "Type" : "Burndown",
+        "Top" : 25,
+        "Visible" : true,
+        "DisplayName" : "Burndown-1",
+        "Height" : 523,
+        "Id" : "Burndown-1",
+        "Width" : 829
+      }
+    } ],
+    "Properties" : {
+      "MinHeight" : 0,
+      "Left" : 0,
+      "BGImageRepeat" : "no-repeat",
+      "ShowDataLoading" : true,
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "id_index" : 1,
+      "supportsAutoResize" : true,
+      "Visible" : true,
+      "DisplayName" : "Mashup",
+      "Style" : "DefaultMashupStyle",
+      "BGImageSize" : "auto",
+      "Height" : 618,
+      "Width" : 1024,
+      "TitleBar" : false,
+      "Rows" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "ResponsiveLayout" : false,
+      "Title" : "",
+      "Columns" : 0,
+      "Z-index" : 10,
+      "TitleBarText" : "Gadget Title Here",
+      "MinWidth" : 0,
+      "__TypeDisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Area" : "Mashup",
+      "Type" : "mashup",
+      "Top" : 0,
+      "IsPrintLayout" : false,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false
+    }
+  },
+  "Events" : [ {
+    "EventTriggerArea" : "Mashup",
+    "EventHandlerService" : "makeBurndownData",
+    "EventTriggerSection" : "",
+    "EventHandlerId" : "Things_BurndownThing",
+    "EventTriggerEvent" : "Loaded",
+    "Id" : "938d7f2e-be3e-4355-bd58-c77434ae581f",
+    "EventTriggerId" : "mashup-root",
+    "EventHandlerArea" : "Data"
+  } ],
+  "mashupType" : "mashup",
+  "DataBindings" : [ {
+    "SourceArea" : "Data",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "makeBurndownData",
+    "Id" : "d2a24ddd-e954-4c30-a631-3199ffde440a",
+    "SourceSection" : "Things_BurndownThing",
+    "SourceDetails" : "AllData",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "InfoTable",
+      "TargetProperty" : "Data",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "INFOTABLE",
+      "TargetPropertyBaseType" : "INFOTABLE",
+      "SourceProperty" : ""
+    } ],
+    "TargetId" : "Burndown-1"
+  } ],
+  "Data" : {
+    "Things_BurndownThing" : {
+      "EntityType" : "Things",
+      "Services" : [ {
+        "Target" : "makeBurndownData",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "e5b1f9a6-9f12-4c04-b28c-7a30397c367f",
+        "Name" : "makeBurndownData"
+      } ],
+      "EntityName" : "BurndownThing",
+      "Id" : "430eafd9-5351-4959-996e-49bb97d63ecd",
+      "DataName" : "Things_BurndownThing"
+    },
+    "UserExtensions" : {
+      "EntityType" : "UserExtensions",
+      "Services" : [ {
+        "Target" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties"
+      } ],
+      "EntityName" : "",
+      "Id" : "UserExtensions",
+      "DataName" : "UserExtensions"
+    },
+    "Session" : {
+      "EntityType" : "Session",
+      "Services" : [ {
+        "Target" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues"
+      } ],
+      "EntityName" : "",
+      "Id" : "session",
+      "DataName" : "Session"
+    }
+  },
+  "DesignTimePermissions" : { }
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;" timestamp="2016-10-04T18:27:16.543Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;documentation : updated&#10;" timestamp="2016-10-04T18:27:30.856Z" user="Administrator"/></ConfigurationChanges></Mashup></Mashups><ScriptFunctionLibraries/><Projects/><Users/><DirectoryServices/><Widgets/><MediaEntities/><Groups/><PersistenceProviders/><ModelTags/><LocalizationTables/><Dashboards/><DataAnalysisDefinitions/><DataShapes><DataShape baseDataShape="" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-10-04T18:25:55.018Z" name="BurndownData" projectName="" tags="PTC:Burndown"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><FieldDefinitions><FieldDefinition baseType="DATETIME" description="" name="date" ordinal="1"/><FieldDefinition baseType="INTEGER" description="" name="open" ordinal="2"/><FieldDefinition baseType="INTEGER" description="" name="scope" ordinal="3"/></FieldDefinitions><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;fields : date : Added, open : Added, scope : Added&#10;" timestamp="2016-10-04T17:55:28.547Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;documentation : updated&#10;" timestamp="2016-10-04T18:13:27.700Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-10-04T18:25:55.018Z" user="Administrator"/></ConfigurationChanges></DataShape></DataShapes><Things><Thing description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" lastModifiedDate="2016-10-04T18:33:27.698Z" name="BurndownThing" projectName="" published="false" tags="PTC:Burndown" thingTemplate="GenericThing" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ThingShape><PropertyDefinitions/><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="makeBurndownData"><ResultType aspect.dataShape="BurndownData" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="makeBurndownData"><ConfigurationTables><ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var params = {
+	infoTableName : "InfoTable",
+	dataShapeName : "BurndownData"
+};
+
+// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(BurndownData)
+var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+
+// BurndownData entry object
+var newEntry = new Object();
+
+newEntry.date = new Date(2016,10,1); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 0; // INTEGER
+result.AddRow(newEntry);
+
+
+newEntry.date = new Date(2016,10,2); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 1; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,3); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 1; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,4); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 1; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,5); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 4; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,6); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 4; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,7); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 6; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,8); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 6; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,9); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 6; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,1); // DATETIME
+newEntry.scope = 7; // INTEGER
+newEntry.open = 6; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,10); // DATETIME
+newEntry.scope = 9; // INTEGER
+newEntry.open = 6; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,11); // DATETIME
+newEntry.scope = 9; // INTEGER
+newEntry.open = 7; // INTEGER
+result.AddRow(newEntry);
+
+newEntry.date = new Date(2016,10,12); // DATETIME
+newEntry.scope = 9; // INTEGER
+newEntry.open = 7; // INTEGER
+result.AddRow(newEntry);
+
+
+newEntry.date = new Date(2016,10,13); // DATETIME
+newEntry.scope = 9; // INTEGER
+newEntry.open = 9; // INTEGER
+result.AddRow(newEntry);
+
+
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, thingTemplate : updated&#10;documentation : updated&#10;services : makeBurndownData : Output Updated, Code Updated, Service Added&#10;" timestamp="2016-10-04T18:12:10.126Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;documentation : updated&#10;" timestamp="2016-10-04T18:13:46.878Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-10-04T18:25:55.034Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : makeBurndownData : Code Updated&#10;" timestamp="2016-10-04T18:31:03.716Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : makeBurndownData : Code Updated&#10;" timestamp="2016-10-04T18:33:27.698Z" user="Administrator"/></ConfigurationChanges></Thing></Things><Logs/><Authenticators/><ThingPackages/><ApplicationKeys/><StateDefinitions/><ThingTemplates/><ExtensionPackages/><Organizations/><Menus/><Resources/><DataTags/><ThingShapes/><Subsystems/></Entities>

@@ -1,0 +1,180 @@
+.misc {
+	; ThingWorx throws away the first definition
+}
+
+.burndownchart text {
+	font-size: 1.125vh;
+	font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.burndownchart svg {
+	margin-top: 0;
+	margin-right: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.burndownchart {
+	background-color: #FAFAFA;
+}
+
+.burndownchart #d3chart {
+	overflow: visible;
+}
+
+.burndownchart .chart-title {
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #4C484E;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+
+.burndownchart .chart-main-label {
+	font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.burndownchart .chart-main-label-element {
+	font-size: 2vh;
+	color: #28353C;
+	margin-left: 0.6vh;
+	margin-right: 0.6vh;
+	margin-top: 1.2vh;
+	padding-top: 0.6vh;
+	vertical-align: bottom;
+}
+.burndownchart .chart-days-remaining {
+	font-size: 1.75vh;
+	font-weight: bold;
+	color: #28353C;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+
+.burndownchart .chart-label {
+	font-size: 1.75vh;
+	color: #28353C;
+	text-align: center;
+	vertical-align: middle ;
+	font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.burndownchart .chart-x-label {
+	padding-top: 0.2vh;
+}
+.burndownchart .legend-table {
+	margin: 0.6vh;
+}
+.burndownchart .legend-row {
+	height: 2vh;
+}
+.burndownchart .legend-symbol {
+	width:1.1vw;
+	height: 0.3vh;
+	vertical-align: middle;
+	margin:0.2vh;
+}
+
+.burndownchart .legend-text {
+	color: #707070;
+	padding:5px;
+	vertical-align: middle;
+	font-size: 1.5vh;
+}
+.burndownchart .chart-line {
+	stroke-width: 3;
+	fill: none;
+}
+.burndownchart .chart-opentasks-color {
+	stroke: #84747D;
+}
+
+.burndownchart .chart-opentasks-area {
+	fill: #98B0BE;
+}
+.burndownchart .chart-scope-color {
+	stroke: #58C5BE;
+}
+.burndownchart .chart-scope-area {
+	fill: #89DFD9;
+}
+.burndownchart .chart-ideal {
+	stroke: #4C484E;
+	stroke-width: 2;
+}
+.burndownchart .chart-today-line {
+	stroke: red;
+	stroke-width: 1;
+}
+.burndownchart .chart-today-label {
+	font-size: 1.3vh;
+	stroke: #707070;
+}
+.burndownchart .tick text {
+	font-size: 1.5vh;
+	stroke: #707070
+}
+.burndownchart .axis line {
+	stroke: black;
+	fill: none;
+	opacity: 1;
+	stroke-width: 2;
+}
+.burndownchart .axis path {
+	stroke: #4C484E;
+	fill: none;
+	opacity: 1;
+	stroke-width: 2;
+}
+.burndownchart .axis .gridline {
+	stroke: #7E929D;
+	stroke-width: 0.5px;
+	opacity: 0.5;
+	fill: none;
+}
+.burndownchart .axis .tickmark {
+	stroke-width: 1;
+}
+.burndownchart .chart-tooltip {
+	font-size: 1.75vh;
+	font-weight: 500;
+	pointer-events: none;
+	color: #28353C
+}
+.burndownchart .chart-tooltip text {
+	pointer-events: none;
+}
+
+agile-chart-viewer .submit-button {
+	color: #00857D;
+	background-color: white;
+	border: 1px solid #00857D;
+	text-align: center;
+	width: 100%;
+	padding: 4px 0px;
+	transition: 0.2s all;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 5px;
+	white-space: nowrap;
+	height: 30px;
+	font-weight: bold;
+	font-size: 12px;
+}
+agile-chart-viewer .submit-button:hover {
+	color: white;
+	background-color: #00857D;
+}
+agile-chart-viewer .button-disabled {
+	color: #999;
+	border: 1px solid #999;
+	cursor: not-allowed;
+}
+agile-chart-viewer .button-disabled:hover {
+	color: #666;
+	border: 1px solid #666;
+	background-color: #c8c8c8;
+}
